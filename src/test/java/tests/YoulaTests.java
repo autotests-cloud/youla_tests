@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class YoulaTests {
+public class YoulaTests extends TestBase {
     @Test
     @DisplayName("Main page successfully opens")
     public void mainPageOpensTest() {
