@@ -40,7 +40,7 @@ public class YoulaTests {
     }
 
     @Test
-    @DisplayName("Main page successfully opens")
+    @DisplayName("Handmade page successfully opens from menu")
     public void handmadePageOpensFromMenuTest() {
         open("https://youla.ru/");
 
