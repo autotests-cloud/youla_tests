@@ -11,9 +11,13 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
+// Главная страница успешно открылась
+// При нажатии на "Разместить объявление" появляется модал авторизации (не залогинен)
+// ..
+
 public class YoulaTests extends TestBase {
     @Test
-    @DisplayName("Main page successfully opens")
+    @DisplayName("Главная страница успешно открылась")
     public void mainPageOpensTest() {
         open("https://youla.ru/");
 
@@ -53,7 +57,7 @@ public class YoulaTests extends TestBase {
         $(by("data-container", "IndexContainer"))
                 .shouldHave(text("Хэндмейд"));
 
-        $(".product_list").$$("product_item").shouldHave(sizeGreaterThan(1));
+        $(".product_list").$$(".product_item").shouldHave(sizeGreaterThan(1));
     }
 
 }
